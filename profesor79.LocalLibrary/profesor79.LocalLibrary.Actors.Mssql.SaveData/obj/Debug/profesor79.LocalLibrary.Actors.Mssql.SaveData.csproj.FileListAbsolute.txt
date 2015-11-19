@@ -1,0 +1,1 @@
+C:\GitHub\LocalLibrary\profesor79.LocalLibrary\profesor79.LocalLibrary.Actors.Mssql.SaveData\bin\Debug\profesor79.LocalLibrary.Actors.Mssql.SaveData.exe.config

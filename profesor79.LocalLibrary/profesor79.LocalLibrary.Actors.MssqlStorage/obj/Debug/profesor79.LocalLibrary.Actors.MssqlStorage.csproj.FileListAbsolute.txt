@@ -1,0 +1,1 @@
+C:\GitHub\LocalLibrary\profesor79.LocalLibrary\profesor79.LocalLibrary.Actors.MssqlStorage\bin\Debug\profesor79.LocalLibrary.Actors.MssqlStorage.exe.config

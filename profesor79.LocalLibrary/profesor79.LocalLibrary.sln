@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.Web", "profesor79.LocalLibrary.Web\profesor79.LocalLibrary.Web.csproj", "{23260D1F-61B6-4F0C-A714-58D0602F85E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.DtoObjects", "profesor79.LocalLibrary.DtoObjects\profesor79.LocalLibrary.DtoObjects.csproj", "{37FBE107-974F-4929-994D-F6F6C8825D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.Actors.Mssql.SaveData", "profesor79.LocalLibrary.Actors.Mssql.SaveData\profesor79.LocalLibrary.Actors.Mssql.SaveData.csproj", "{0A534CD6-8FBE-4AE4-8060-D6E110BBB076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.Actors.Mssql.ReadData", "profesor79.LocalLibrary.Actors.Mssql.ReadData\profesor79.LocalLibrary.Actors.Mssql.ReadData.csproj", "{5C12FB65-159C-4816-9CF9-3CA24F8E8530}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{37A5E4A3-A0E6-401F-96A1-33AFCCA87701}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.System", "profesor79.LocalLibrary.System\profesor79.LocalLibrary.System.csproj", "{FC153ED8-A9A7-425A-86F7-4845B949BDA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23260D1F-61B6-4F0C-A714-58D0602F85E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23260D1F-61B6-4F0C-A714-58D0602F85E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23260D1F-61B6-4F0C-A714-58D0602F85E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23260D1F-61B6-4F0C-A714-58D0602F85E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FBE107-974F-4929-994D-F6F6C8825D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FBE107-974F-4929-994D-F6F6C8825D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FBE107-974F-4929-994D-F6F6C8825D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FBE107-974F-4929-994D-F6F6C8825D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A534CD6-8FBE-4AE4-8060-D6E110BBB076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A534CD6-8FBE-4AE4-8060-D6E110BBB076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A534CD6-8FBE-4AE4-8060-D6E110BBB076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A534CD6-8FBE-4AE4-8060-D6E110BBB076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C12FB65-159C-4816-9CF9-3CA24F8E8530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C12FB65-159C-4816-9CF9-3CA24F8E8530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C12FB65-159C-4816-9CF9-3CA24F8E8530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C12FB65-159C-4816-9CF9-3CA24F8E8530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

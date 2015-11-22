@@ -1,0 +1,2 @@
+!define webActor(x)  actor x <<akka>>   #Blue
+skinparam defaultFontName IBM 3270 Narrow

@@ -1,7 +1,8 @@
 @startuml
-!define webActor(x)  actor x <<akka>>  
+!define PLANTUML_HOME D:\dev\LocalLibrary\PlantUmlDrawings
+!include PLANTUML_HOME\definitions.plantuml
 
-actor "App User" as user
+actor "App\nUser" as user
 participant WebApp as web
 
 webActor(UserData)
@@ -18,5 +19,10 @@ CarHistory  --> web : CarServiceHistory
 web -->user : CarServiceHistory(SignalR)
 CarData-->web:CarTechnicalDetails
 web -->user : CarTechnicalDetails(SignalR)
+
+skinparam actor {
+    backgroundColor webActor Green
+    backgroundColor "App User" Green
+}
 
 @enduml

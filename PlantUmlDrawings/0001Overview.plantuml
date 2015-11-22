@@ -1,0 +1,22 @@
+@startuml
+!define webActor(x)  actor x <<akka>>  
+
+actor AppUser as user
+participant WebApp as web
+
+webActor(UserData)
+webActor(CarHistory)
+webActor(CarData)
+
+user->web:GetPage
+web->UserData:GetUserData
+web<-UserData : UserData
+web--> CarData : getCarTechnicalDetails
+web--> CarHistory  :getCarServiceHistory
+web-> user : BasePage
+CarData-->web:CarTechnicalDetails
+web -->user : CarTechnicalDetails(SignalR)
+CarHistory  --> web : CarServiceHistory
+web -->user : CarServiceHistory(SignalR)
+
+@enduml

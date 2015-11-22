@@ -279,3 +279,4 @@ _Pvt_Extensions
 *.dll
 *.cache
 profesor79.LocalLibrary/profesor79.LocalLibrary.Actors.Mssql.ReadData/obj/Debug/profesor79.LocalLibrary.Actors.Mssql.ReadData.csproj.FileListAbsolute.txt
+*.svg

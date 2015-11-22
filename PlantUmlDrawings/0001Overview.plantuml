@@ -1,7 +1,7 @@
 @startuml
 !define webActor(x)  actor x <<akka>>  
 
-actor AppUser as user
+actor "App User" as user
 participant WebApp as web
 
 webActor(UserData)
@@ -14,9 +14,9 @@ web<-UserData : UserData
 web--> CarData : getCarTechnicalDetails
 web--> CarHistory  :getCarServiceHistory
 web-> user : BasePage
-CarData-->web:CarTechnicalDetails
-web -->user : CarTechnicalDetails(SignalR)
 CarHistory  --> web : CarServiceHistory
 web -->user : CarServiceHistory(SignalR)
+CarData-->web:CarTechnicalDetails
+web -->user : CarTechnicalDetails(SignalR)
 
 @enduml

@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{37A5E4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profesor79.LocalLibrary.System", "profesor79.LocalLibrary.System\profesor79.LocalLibrary.System.csproj", "{FC153ED8-A9A7-425A-86F7-4845B949BDA3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fSharp", "fSharp", "{8FF3AD14-9CE8-46BC-A1C8-B3E68B6A4F45}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "profesor79.LocalLibrary.System", "..\fSharp\profesor79.LocalLibrary.System\profesor79.LocalLibrary.System.fsproj", "{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,8 +50,15 @@ Global
 		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC153ED8-A9A7-425A-86F7-4845B949BDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64F9EDC4-423B-44C0-BB7C-9FB7528F20D6} = {8FF3AD14-9CE8-46BC-A1C8-B3E68B6A4F45}
 	EndGlobalSection
 EndGlobal

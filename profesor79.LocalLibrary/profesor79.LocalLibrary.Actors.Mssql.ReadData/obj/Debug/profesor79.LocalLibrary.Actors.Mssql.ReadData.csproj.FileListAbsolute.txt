@@ -1,1 +1,3 @@
 C:\GitHub\LocalLibrary\profesor79.LocalLibrary\profesor79.LocalLibrary.Actors.Mssql.ReadData\bin\Debug\profesor79.LocalLibrary.Actors.Mssql.ReadData.exe.config
+C:\GitHub\LocalLibrary\profesor79.LocalLibrary\profesor79.LocalLibrary.Actors.Mssql.ReadData\obj\Debug\profesor79.LocalLibrary.Actors.Mssql.ReadData.exe
+C:\GitHub\LocalLibrary\profesor79.LocalLibrary\profesor79.LocalLibrary.Actors.Mssql.ReadData\obj\Debug\profesor79.LocalLibrary.Actors.Mssql.ReadData.pdb

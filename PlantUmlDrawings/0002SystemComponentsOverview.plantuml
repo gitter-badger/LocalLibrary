@@ -1,0 +1,25 @@
+@startuml
+!define PLANTUML_HOME D:\dev\LocalLibrary\PlantUmlDrawings
+!include PLANTUML_HOME\definitions.plantuml
+
+package webApi <<Cloud System>> {
+database mongoDB <<imageStorage>> as mongo
+database sqlLike <<dataStorage>>
+webActor(webServer)
+webActor(internalServices)
+webServer <-down-> internalServices
+webServer <-up-> sqlLike
+webServer <-left-> mongo
+}
+package mobilePhones <<Android, Apple, Windows>> {
+garageMechanicUser <-> webServer 
+garageManagerUser <-> webServer 
+carOwnerUser <-> webServer 
+}
+
+package browsers{
+garageManagersUser <-up-> webServer 
+carOwnersUser <-up-> webServer 
+}
+
+@enduml

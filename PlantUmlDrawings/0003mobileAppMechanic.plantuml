@@ -1,0 +1,19 @@
+@startuml
+!define PLANTUML_HOME D:\dev\LocalLibrary\PlantUmlDrawings
+!include PLANTUML_HOME\definitions.plantuml
+
+
+mechanictTablet(mechanic)
+mechanic -d-> (make\npart\nphoto)
+mechanic -d-> (starts/stops\nservice time)
+mechanic -d-> (makes notes\nabout service)
+mechanic -d-> (sends message\n to owner)
+mechanic -d-> (confirms\ncheck\nprocess)
+mechanic -up-> (fills services\nsheet)
+mechanic -up-> (fills due\namout)
+mechanic -up-> (checks car's\nhistory)
+mechanic -up-> (controls\ndaily tasks)
+mechanic -up-> (checks\nerrors "odb")
+mechanic -up-> (orders\nparts)
+
+@enduml

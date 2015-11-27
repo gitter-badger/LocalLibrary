@@ -2,19 +2,21 @@
 !define PLANTUML_HOME D:\dev\LocalLibrary\PlantUmlDrawings
 !include PLANTUML_HOME\definitions.plantuml
 
-package application <<Cloud System>> {
+ package  backendServices <<Cloud System>> #lightblue{
 database mongoDB <<imageStorage>> as mongo
 database sqlLike <<dataStorage>>
-webActor(webServer)
 webActor(internalServices)
 
-webServer <-down- internalServices
-webServer -down-> internalServices
+internalServices <-d- sqlLike
+internalServices -d-> sqlLike
+internalServices -d-> mongo
+internalServices <-d- mongo
+} 
 
-internalServices <-up- sqlLike
-internalServices -up-> sqlLike
-internalServices -> mongo
-internalServices <- mongo
+package application <<WWW endpoint>> #lightblue {
+webActor(webServer)
+webServer <- internalServices
+webServer -> internalServices
 }
 
 package mobileDevices <<Android, Apple, Windows>> {
@@ -27,5 +29,6 @@ package browsers{
 garageManagersUser <-up-> webServer 
 carOwnersUser <-up-> webServer 
 }
+
 
 @enduml

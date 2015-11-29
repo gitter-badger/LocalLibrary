@@ -1,0 +1,56 @@
+@startuml
+!define PLANTUML_HOME D:\dev\LocalLibrary\PlantUmlDrawings
+!include PLANTUML_HOME\definitions.plantuml
+'left to right direction
+
+title Work In progress
+cloud "========\ncloud\n========"{
+database "Event Store\nhttp://docs.geteventstore.com/" {
+ frame "actor events" {
+    [persistence]
+    [rollbacks]
+    [events]
+  }
+
+  frame "application events" {
+    [security]
+    [exceptions]
+    [logging]
+    [stats]
+  }
+ }
+
+database "MongoDB" {
+ frame "images" {
+    [serviceImages]
+    [userImages]
+  }
+
+  frame "objects" {
+    [reports]
+    [configurations]
+    [mobileAppBackups]
+    [upload\ndownload\npackages]
+  }
+}
+
+package "WebWorkers" {
+frame "api(s)"{
+[carsta]
+[carPartsData2]
+[carPartsData3]
+}
+}
+ 
+node "Other Groups" {
+  [AlaMaKOta]
+  FTP - [Second Component]
+  [First Component] --> FTP
+} 
+
+
+
+}
+
+
+@enduml

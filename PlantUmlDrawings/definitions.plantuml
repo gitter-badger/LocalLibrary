@@ -1,3 +1,5 @@
 !define webActor(x)  actor x <<akka>>   #Blue
 !define mechanictTablet(x)  actor x #Green
+!define carOwner(x)  actor x #Grey
+
 skinparam defaultFontName IBM 3270 Narrow

@@ -28,11 +28,7 @@ namespace akka.netHelloWorld
             var greeter2 = system.ActorOf<GreetingActorTyped>();
             // Send a message to the actor.
             greeter2.Tell(new Greet("World 2"));
-
-            var networkSystem = ActorSystem.Create("my-actor-server");
-            var networkedOne = system.ActorSelection("akka.tcp://service1@127.0.0.1:8091/user/service-b");
-            networkedOne.Tell("Networked !");
-
+            
             // This prevents the app from exiting
             // before the async work is done.
             Console.WriteLine("----------");

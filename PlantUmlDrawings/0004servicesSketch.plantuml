@@ -35,17 +35,17 @@ database "MongoDB" {
 }
 
 
-database "Sql Database" {
- frame "imagesa" {
-    [serviceImageas]
-    [userImagesa]
+database "Sql Database\n any relational database fromy MySql to whatever suit" as sqlDatabase {
+ frame "transactions" {
+    [buy/sell]
+    [invoices] 	
+    [etc...]
   }
 
-  frame "objectsa" {
-    [reports]
-    [configurationas]
-    [mobileAppBackaups]
-    [upload\ndownloaad\npackages]
+  frame "userData" {
+    [userData]
+    [securityStuff]
+
   }
 }
 

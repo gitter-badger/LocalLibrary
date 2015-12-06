@@ -5,14 +5,14 @@
 
 title Work In progress
 cloud "========\ncloud\n========"{
-database "Event Store\nhttp://docs.geteventstore.com/" {
- frame "actor events" {
+database "Event Store\nhttp://docs.geteventstore.com/" as eventStore {
+ frame "actor events" as actorEvents {
     [persistence]
     [rollbacks]
     [events]
-  }
+  } 
 
-  frame "application events" {
+  frame "application events" as applicationEvents {
     [security]
     [exceptions]
     [logging]
@@ -34,18 +34,55 @@ database "MongoDB" {
   }
 }
 
+
+database "Sql Database" {
+ frame "imagesa" {
+    [serviceImageas]
+    [userImagesa]
+  }
+
+  frame "objectsa" {
+    [reports]
+    [configurationas]
+    [mobileAppBackaups]
+    [upload\ndownloaad\npackages]
+  }
+}
+
+
+ 
+cloud "akka Cluster" {
+node webWorkersManagement{
+  }  
+  webWorkersManagement <--> WebWorkers
+
 package "WebWorkers" {
 frame "api(s)"{
-[carsta]
-[carPartsData2]
-[carPartsData3]
+[carStatisitcs]
+[carPartsData]
+[registrationPlatesApi]
+[partsShopApi]
+[garagesContactsApi]
 }
 }
- 
-node "Other Groups" {
-  [AlaMaKOta]
-  FTP - [Second Component]
-  [First Component] --> FTP
+
+  node eventHandlers{
+  [r]  
+  }
+
+ actorEvents --->  eventHandlers
+
+  node persistenceProviders{
+  [d]
+  [dd]
+  }
+
+  persistenceProviders -> eventStore
+  persistenceProviders <-> MongoDB
+
+
+
+
 } 
 
 

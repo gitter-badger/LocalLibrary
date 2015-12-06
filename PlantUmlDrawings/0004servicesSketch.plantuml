@@ -70,7 +70,7 @@ frame "api(s)"{
   [r]  
   }
 
- actorEvents --->  eventHandlers
+ actorEvents -[#0000FF]-> eventHandlers
 
   node persistenceProviders{
   [d]
